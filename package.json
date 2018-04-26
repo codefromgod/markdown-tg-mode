@@ -1,0 +1,35 @@
+{
+  "name": "markdown-tg-mode",
+  "version": "1.0.0",
+  "description": "Codemirror Telegram Markdown mode.",
+  "scripts": {
+    "test": "gulp lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xen/markdown-tg-mode.git"
+  },
+  "keywords": [
+    "codemirror",
+    "codemirror-mode",
+    "telegram",
+    "markdown"
+  ],
+  "author": "Mikhail Kashkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xen/markdown-tg-mode/issues"
+  },
+  "homepage": "https://github.com/xen/markdown-tg-mode#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.19.1",
+    "gulp": "^4.0.0",
+    "gulp-debug": "^3.2.0",
+    "gulp-eslint": "^4.0.2"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint"
+  },
+  "dependencies": {}
+}
