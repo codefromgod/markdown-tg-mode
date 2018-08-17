@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+<title>CodeMirror: Markdown mode</title>
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
+<script src="node_modules/codemirror/lib/codemirror.js"></script>
+<script src="markdown-tg.js"></script>
+
+
+<style type="text/css">
+  .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+  .cm-s-default span.cm-arrow { color: red; }      
+  .cm-s-default .cm-trailing-space-a:before,
+  .cm-s-default .cm-trailing-space-b:before {position: absolute; content: "\00B7"; color: #777;}
+  .cm-s-default .cm-trailing-space-new-line:before {position: absolute; content: "\21B5"; color: #777;}
+</style>
+</head>
+<body>
+<article>
+<h2>Telegram Markdown mode</h2>
+<form><textarea id="code">
+*bold text*
+_italic text_
+[inline URL](http://www.example.com/)
+[inline mention of a user](tg://user?id=123456789)
+`inline fixed-width code`
+```block_language
+pre-formatted fixed-width code block
+```
+</textarea></form>
+
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+          lineNumbers: false,
+          theme: "default"
+        });
+      </script>
+  
+      <!-- var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode: 'markdown-tg',
+        lineNumbers: false,
+        theme: "default"
+      });
+    </script> -->
+
+    <p><strong>MIME types defined:</strong> <code>text/x-markdown-tg</code>.</p>
+
+  </article>
+</body>
+</html>
